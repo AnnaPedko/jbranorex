@@ -30,33 +30,33 @@ public class MainPage extends PageObject {
 
 
     @FindBy (id="FirstName")
-    WebElement firstName;
+    private WebElementFacade firstName;
 
     @FindBy (id="LastName")
-    WebElement lastName;
+    private WebElementFacade lastName;
 
     @FindBy (xpath = "//td/input[@value='female']")
-    WebElement radioButtonFemale;
+    private WebElementFacade radioButtonFemale;
 
     @FindBy(xpath = "//input[@value='male']")
-    WebElement radioButtonMale;
+    private WebElementFacade radioButtonMale;
 
     @FindBy (id="Add")
-    WebElement buttonAdd;
+    private WebElementFacade buttonAdd;
 
     @FindBy(id="Delete")
-    WebElement buttonDelete;
+    private WebElementFacade buttonDelete;
 
     @FindBy(id="Load")
-    WebElement buttonLoad;
+    private WebElementFacade buttonLoad;
 
     @FindBy(id="Save")
-    WebElement buttonSave;
+    private WebElementFacade buttonSave;
 
     @FindBy(id="Clear")
-    WebElement buttonClear;
+    private WebElementFacade buttonClear;
     @FindBy (id="VIPs")
-    WebElement tablePeoples;
+    private WebElementFacade tablePeoples;
 
 
 
@@ -84,12 +84,6 @@ public class MainPage extends PageObject {
 
         buttonDelete.click();
     }
-
-
-
-
-
-
 
 
 
